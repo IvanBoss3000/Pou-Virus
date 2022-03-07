@@ -86,6 +86,8 @@ int setRegestryValue(string Location, string Name, string Type , string Data) {
 
 }
 
+
+
 int copyFile(string file, string destination, string fileName) {
 	string command = "copy \"" + file + "\" \"" + destination + "\\" + fileName + "\"";
 
@@ -94,7 +96,6 @@ int copyFile(string file, string destination, string fileName) {
 	LPCSTR finalCommand = command.c_str();
 	system(finalCommand);
 }
-
 
 string username() {
 	char username[UNLEN + 1];
